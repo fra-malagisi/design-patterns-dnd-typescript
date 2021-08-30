@@ -17,7 +17,6 @@ export class Character {
     constructor(name: string, race: RaceEnum) {
         this.name = name;
         this.race = new RaceFactory().getRace(race);
-        this.setItem(new Shovel());
     }
 
     getRace(): Race {
